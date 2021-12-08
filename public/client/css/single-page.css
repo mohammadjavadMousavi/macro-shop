@@ -1,0 +1,185 @@
+/* product part */
+.products-sec-container .main-title {
+  margin-bottom: 0 !important;
+}
+
+.single-prodcut-container {
+  margin-top: 4rem;
+}
+
+.single-prodcut-container .single-product-info .product-property-text {
+  font-weight: bold;
+}
+
+.single-prodcut-container .single-product-info .user-comments {
+  display: block;
+  margin-top: -.4rem;
+  font-size: .9rem;
+  color: var(--secondary-color-900);
+  margin-bottom: .7rem;
+}
+
+.single-prodcut-container .single-product-info .user-buyer {
+  margin-top: -.4rem;
+}
+
+/* left add product to basket */
+.single-prodcut-container .single-product-basket .product-name {
+  margin-bottom: -.5rem !important;
+}
+
+.single-prodcut-container .single-product-basket .basket-box {
+  background: #fff;
+  box-shadow: var(--outer-shadow);
+  padding: -2px;
+}
+
+.single-prodcut-container .single-product-basket .trust-wrapper .trust-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: var(--bs-secondary);
+}
+
+.single-prodcut-container .single-product-basket .trust-wrapper .trust-img {
+  width: 30px;
+  display: block;
+  margin-left: .5rem;
+}
+
+.single-prodcut-container .single-product-basket .product-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.single-prodcut-container .single-product-basket .add-to-basket-btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(to left, var(--primary-color-900), var(--primary-color-500), var(--primary-color-100)) !important;
+  color: #fff;
+  margin: 1rem 0 0 0;
+}
+
+.single-prodcut-container .single-product-basket .add-to-basket-btn:hover {
+  background: linear-gradient(to right, var(--primary-color-900), var(--primary-color-500), var(--primary-color-100)) !important;
+}
+
+.main-container {
+  margin-top: 2rem;
+}
+
+.main-container .specifications-list .specifications-item {
+  display: flex;
+  justify-content: space-between;
+  margin: .5rem;
+}
+
+/* left fixed basket box */
+.main-container .basket-add-info {
+  padding: .7rem;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.main-container .basket-add-info .product-part {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  .main-container .basket-add-info .product-part {
+    flex-direction: column;
+  }
+}
+
+.main-container .basket-add-info .product-part img {
+  width: 110px;
+  margin-left: .2rem;
+}
+
+.main-container .basket-add-info .garanty-text {
+  display: flex;
+  align-items: center;
+}
+
+.main-container .basket-add-info .garanty-text i {
+  display: block;
+  padding: .4rem;
+  border-radius: 50%;
+  background: var(--bs-success);
+  color: #fff;
+  margin-left: .5rem;
+  font-size: .7rem;
+}
+
+/* price */
+.main-container .basket-add-info .basket-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* add to basket button */
+.main-container .basket-add-info .add-to-basket-btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(to left, var(--primary-color-900), var(--primary-color-500), var(--primary-color-100)) !important;
+  color: #fff;
+  margin: 1rem 0 0 0;
+}
+
+.main-container .basket-add-info .add-to-basket-btn:hover {
+  background: linear-gradient(to right, var(--primary-color-900), var(--primary-color-500), var(--primary-color-100)) !important;
+}
+
+/************* comments form part *************/
+.main-container .comment-form .comment-name-input {
+  margin-bottom: 1rem;
+}
+
+.main-container .comment-form .comment-name-input::placeholder,
+.main-container .comment-form .comment-text-input::placeholder {
+  color: var(--gray-900);
+  font-size: .9rem;
+}
+
+.main-container .comment-form .comment-text-input {
+  height: 100px;
+}
+
+.main-container .comment-form .comment-submit-btn {
+  width: 100%;
+  margin-top: 1.4rem;
+  color: var(--primary-color-900);
+  border: 1px solid var(--primary-color-900);
+}
+
+.main-container .comment-form .comment-submit-btn:hover {
+  background: var(--primary-color-900);
+  color: #fff;
+}
+
+/*************** user comments part ***************/
+.main-container .comments-part-title::after {
+  display: none;
+}
+
+.main-container .comments-part-title {
+  font-size: 2.2rem;
+}
+
+.main-container .user-comments-wrapper .user-comment-name {
+  display: flex;
+  align-items: center;
+}
+
+.main-container .user-comments-wrapper .user-comment-name i {
+  margin-left: .5rem;
+  color: var(--gray-900);
+}
+
+.main-container .user-comments-wrapper .user-comment-name {
+  color: var(--primary-color-500);
+}

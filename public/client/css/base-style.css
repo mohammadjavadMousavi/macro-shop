@@ -1,0 +1,88 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary color */
+  --primary-color-900: #6721a8;
+  --primary-color-500: #752ed8;
+  --primary-color-100: #8b3ef7;
+  /* secondary color */
+  --secondary-color-900: #f48c06;
+  --secondary-color-500: #faa307;
+  --secondary-color-100: #ffba08;
+  /* dark color */
+  --dark-color-900: #181717;
+  --dark-color-800: #201f1f;
+  --dark-color-700: #302f2d;
+  /* light color */
+  --light-color-900: #f7f7f7;
+  --light-color-800: #f1f1f1;
+  --light-color-700: #e6e6e6;
+  /* gray color */
+  --gray-900: #afafaf;
+  --gray-800: #bebebe;
+  --gray-700: #ccc;
+  /* fonts */
+  --zilla-font: 'zilla slab';
+  --iransans-font: 'iran sans';
+  --sahel-font: 'sahel';
+  /* shadow */
+  --outer-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: #fbfeff !important;
+  font-family: var(--sahel-font), var(--zilla-font) !important;
+}
+
+html {
+  direction: rtl;
+}
+
+/* english font */
+@font-face {
+  font-family: 'zilla slab';
+  src: url('../fonts/ZillaSlab.ttf');
+}
+
+/* persian font */
+@font-face {
+  font-family: 'iran sans';
+  src: url('../fonts/iransans.ttf');
+}
+
+@font-face {
+  font-family: 'sahel';
+  src: url('../fonts/Sahel.ttf');
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  margin-bottom: 0 !important;
+  line-height: 1.6;
+}
+
+button {
+  box-shadow: none !important;
+}
+
+ul {
+  list-style: none;
+  padding-right: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+input {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0 !important;
+  line-height: 1.8 !important;
+}

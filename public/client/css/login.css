@@ -1,0 +1,225 @@
+.form-container {
+    width: 100%;
+    position: relative;
+}
+
+
+/* form container shapes */
+
+.outer-shape {
+    width: 100%;
+    height: calc(100vh - 88px);
+    position: absolute;
+    bottom: 0;
+}
+
+.outer-shape::after,
+.outer-shape::before {
+    content: '';
+    position: absolute;
+    width: 330px;
+    height: 230px;
+}
+
+.outer-shape::after {
+    background: linear-gradient(to right, var(--primary-color-900), var(--primary-color-500), var(--primary-color-100));
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.outer-shape::before {
+    background: linear-gradient(to left, var(--primary-color-900), var(--primary-color-500), var(--primary-color-100));
+    top: 0;
+    right: 0;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+
+/* form wrapper */
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    height: 100%;
+}
+
+
+/* avatar */
+
+.form-wrapper .form-avatar {
+    width: 10%;
+}
+
+.form-wrapper .form-avatar img {
+    width: 100%;
+}
+
+
+/* form */
+
+.form-wrapper .main-form {
+    width: 30%;
+}
+
+
+/* input group */
+
+.form-wrapper .main-form .form-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+    background: #fff;
+    padding: 0 .5rem;
+    border-radius: 50px;
+    box-shadow: var(--outer-shadow);
+}
+
+
+/* input */
+
+.form-wrapper .main-form .form-input-group .form-input {
+    width: 100%;
+    padding: .6rem 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.form-wrapper .main-form .form-input-group .form-input::placeholder {
+    font-family: var(--iransans-font);
+    font-size: 1.2rem;
+    padding-right: .4rem;
+    color: var(--gray-900);
+}
+
+
+/* input icon */
+
+.form-wrapper .main-form .form-input-group .input-icon {
+    font-size: 1rem;
+    width: 35px;
+    padding: .5rem;
+}
+
+
+/* submit button */
+
+.form-wrapper .main-form .submit-btn {
+    background-image: linear-gradient(to right, var(--primary-color-900), var(--primary-color-500), var(--primary-color-100));
+    width: 100%;
+    color: #fff;
+    padding: .5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+}
+
+.form-wrapper .main-form .submit-btn:hover {
+    background-image: linear-gradient(to left, var(--primary-color-900), var(--primary-color-500), var(--primary-color-100));
+}
+
+
+/* fomgot password link */
+
+.form-wrapper .main-form .forgot-pass-link {
+    display: block;
+    margin-top: .7rem;
+    color: var(--dark-color-700);
+    opacity: .6;
+    transition: all .2s;
+}
+
+.form-wrapper .main-form .forgot-pass-link:hover {
+    opacity: 1;
+}
+
+
+/******************* validation icons *******************/
+
+.form-wrapper .main-form .form-input-group .validation-icons {
+    display: flex;
+}
+
+.form-wrapper .main-form .form-input-group .validation-icons i {
+    padding: 0 .5rem;
+    display: none;
+}
+
+.form-wrapper .main-form .form-input-group .validation-icons .valid-icon {
+    color: var(--bs-success);
+}
+
+.form-wrapper .main-form .form-input-group .validation-icons .invalid-icon {
+    color: var(--bs-danger);
+}
+
+
+/* show valid icon in valid input */
+
+.form-wrapper .main-form .form-input-group.valid-input .valid-icon {
+    display: block;
+}
+
+
+/* show invalid icon in invalid input */
+
+.form-wrapper .main-form .form-input-group.invalid-input .invalid-icon {
+    display: block;
+}
+
+
+/******************* alert validation *******************/
+
+.alert-message {
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 !important;
+    border: 1px solid transparent !important;
+    background: transparent !important;
+    transition: all .3s;
+}
+
+
+/* invalid message */
+
+.invalid-message {
+    background: hsla(20, 80%, 70%, .4) !important;
+    border-color: var(--bs-danger) !important;
+    color: var(--bs-danger);
+    height: auto;
+    overflow: auto;
+    padding: .4rem 1rem;
+    margin-bottom: 2rem !important;
+}
+
+
+/* valid message */
+
+.valid-message {
+    background: hsla(120, 80%, 70%, .4) !important;
+    border-color: var(--bs-success) !important;
+    color: var(--bs-success);
+    height: auto;
+    overflow: auto;
+    padding: .4rem 1rem;
+    margin-bottom: 2rem !important;
+}
+
+
+/***** border of inputs in validation *****/
+
+.form-wrapper .main-form .form-input-group.valid-input {
+    border: 1px solid var(--bs-success) !important;
+}
+
+.form-wrapper .main-form .form-input-group.invalid-input {
+    border: 1px solid var(--bs-danger) !important;
+}

@@ -1,0 +1,134 @@
+/******************** responsive search box ********************/
+
+@media screen and (max-width: 1100px) {
+    .header #navbarCollapse .search-box-container .search-box-group {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    .header #navbarCollapse .search-box-container .search-box-group {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header #navbarCollapse .search-box-container .search-box-group {
+        width: 100%;
+    }
+    .header #navbarCollapse .search-box-container .search-box-outer .close-search-btn {
+        display: none;
+    }
+}
+
+
+/******************** responsive main header ********************/
+
+@media screen and (max-width: 1300px) {
+    .header .main-header .main-image-wrapper {
+        width: 70% !important;
+    }
+    .header .main-header .main-info-wrapper {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header .main-header .main-image-wrapper {
+        width: 100% !important;
+    }
+    .header .main-header .main-info-wrapper {
+        width: 60% !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header .main-header .main-image-wrapper {
+        width: 80% !important;
+    }
+    .header .main-header .main-info-wrapper {
+        width: 60% !important;
+        padding-left: 0 !important;
+    }
+    .header .main-header .main-header-item {
+        margin: 1rem;
+        padding: 0 1rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header .main-header .main-image-wrapper {
+        width: 100% !important;
+    }
+    .header .main-header .main-info-wrapper {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header .main-header .main-info-wrapper {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../media/main-header.png') no-repeat center/cover;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header .main-header .main-info-wrapper .header-slogan {
+        font-size: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .header .main-header .main-info-wrapper .header-slogan {
+        font-size: 2.6rem !important;
+    }
+}
+
+
+/*********************** responsive trust infirmation part ***********************/
+
+@media screen and (max-width: 991px) {
+    .trust-info-container .trust-info-item {
+        border-left: none;
+        height: auto;
+    }
+    .trust-info-container .trust-info-item:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .trust-info-container .trust-info-item {
+        padding: 0;
+    }
+    .trust-info-container .trust-info-item:first-child {
+        border-left: none;
+    }
+    .trust-info-container .trust-info-item .trust-info-img {
+        width: 13% !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .trust-info-container .trust-info-item .trust-info-img {
+        width: 17% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .trust-info-container .trust-info-item .trust-info-img {
+        width: 22% !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .trust-info-container .trust-info-item .trust-info-img {
+        width: 60px !important;
+    }
+}
